@@ -37,7 +37,6 @@ public class P2PTwitter {
 			    String pseudonym = p.getProperty(peerList[i] +".pseudo");
 			    String unikey = p.getProperty(peerList[i] +".unikey");
 			    int port = Integer.parseInt(p.getProperty(peerList[i] +".port"));
-			    System.out.println(unikey);
 
 			    if(unikey.compareTo(inputUnikey) == 0){
 			    	currentUser = new Peer(ip, pseudonym, unikey);
