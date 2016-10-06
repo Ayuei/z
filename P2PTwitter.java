@@ -39,10 +39,10 @@ public class P2PTwitter {
 			    int port = Integer.parseInt(p.getProperty(peerList[i] +".port"));
 
 			    if(unikey.compareTo(inputUnikey) == 0){
-			    	currentUser = new Peer(ip, pseudonym, unikey);
+			    	currentUser = new Peer(ip, pseudonym, unikey, port);
 			    	auth = true;
 			    }else{
-			    	peers.add(new Peer(ip, pseudonym, unikey));
+			    	peers.add(new Peer(ip, pseudonym, unikey, port));
 			    }
 			}
 		   
