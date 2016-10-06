@@ -22,8 +22,8 @@ public class Client implements Runnable{
 		try{
 			
 			BufferedReader bin = new BufferedReader(new InputStreamReader(System.in));
-			clientSocket = new DatagramSocket();
-			currentUser.setPort(clientSocket.getLocalPort());
+			clientSocket = new DatagramSocket(currentUser.getPort());
+			
 			while(true){
 				
 				System.out.print("Status: ");
